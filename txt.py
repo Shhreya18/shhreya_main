@@ -32,7 +32,7 @@ for idx, filename in enumerate(files):
     print(result.stdout)
     all_outputs.append(f'\n=== Running {filename} ===\n{result.stdout}')
     ask_user = input('Pass or Fail? (p/f): ')
-    if ask_user.lower() != 'y':
+    if ask_user.lower() != 'p':
         print('Exiting the script. Creating a report file')
         
         for remaining in files[idx+1:]:
