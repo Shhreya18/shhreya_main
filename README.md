@@ -12,6 +12,7 @@ What was then created:
 - txt.py file that acted as the main script to automate the testing 
 
 ##**Virtual.py**
+
 Goal: 
 1. Mock implementation of a serial port to simulate the behaviour of a real serial port
 2. To test without hardware
