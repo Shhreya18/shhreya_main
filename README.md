@@ -3,22 +3,22 @@ Automate the testing for the commands being passed onto io_test1.py to improve t
 
 ##**The process**
 
-What was provided:
+__What was provided:__
 - A base tester file titles io_test1.py (this was later editted to import the VirtualPort class from virtual.py)
 - A folder containing txt files that had the commands that were to be automated into the test file
 
-What was then created:
+__What was then created:__
 - virtual.py that acted as a virtual port
 - txt.py file that acted as the main script to automate the testing 
 
 ##**Virtual.py**
 
-Goal: 
+__Goal:__
 1. Mock implementation of a serial port to simulate the behaviour of a real serial port
 2. To test without hardware
 3. Allow interface compatability 
 
-Explanations: 
+__Explanations:__
 1. __init__() = intialises it to be open and creates an empty buffer to simulate response
 2. write(self,data) = simulates sending data into the port
 3. read(self,data) = simulates reading data from the port
@@ -26,13 +26,13 @@ Explanations:
 
 ##**Txt.py**
 
-Goal:
+__Goal:__
 1. Automate the txt files that were passed into io_test1.py as commands
 2. Make sure they were passed on numerically (eg. 1_version_id would be passed first)
 3. Upon the result of a test being outputted, users are presented a choice to move on to the next test or exit
 4. By exiting, an text file titled output.txt is generated that creates a report with all the test results for each command
 
-Explanations: 
+__Explanations:__
 1. Import os and subprocess
 2. Give variables to the port, folder and test file
 3. def extract_number(filename) = extracts the first part of the filename, which returns a number that is then used to ensure the files are run numerically
