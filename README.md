@@ -1,11 +1,11 @@
 # **Automated Testing**
-Automate the testing for the commands being passed onto io_test1.py to improve the efficiency that would otherwise not be achieved had it been manually inputed 
+Automate the testing of commands for io_test1.py to improve efficiency and eliminate manual input.
 
 ##**The process**
 
 __What was provided:__
-- A base tester file titles io_test1.py (this was later editted to import the VirtualPort class from virtual.py)
-- A folder containing txt files that had the commands that were to be automated into the test file
+- io_test1.py: The base tester file (later modified to import VirtualPort from virtual.py)
+- /commands/: Folder containing .txt files, each with a set of commands to be tested
 
 __What was then created:__
 - virtual.py that acted as a virtual port
@@ -27,10 +27,10 @@ __Explanations:__
 ##**Txt.py**
 
 __Goal:__
-1. Automate the txt files that were passed into io_test1.py as commands
-2. Make sure they were passed on numerically (eg. 1_version_id would be passed first)
-3. Upon the result of a test being outputted, users are presented a choice to move on to the next test or exit
-4. By exiting, an text file titled output.txt is generated that creates a report with all the test results for each command
+1. Automate running .txt command files through io_test1.py
+2. Ensure files are processed in numerical order (e.g., 1_version_id.txt before 2_status.txt)
+3. Prompt the user to continue or exit after each test
+4. Generate a summary report (output.txt) if the user chooses to exit 
 
 __Explanations:__
 1. Import os and subprocess
