@@ -28,7 +28,7 @@ Explanations:
 
 Goal:
 1. Automate the txt files that were passed into io_test1.py as commands
-2. Make sure they were passed on numerically (eg. 1_version_id) would be passed first
+2. Make sure they were passed on numerically (eg. 1_version_id would be passed first)
 3. Upon the result of a test being outputted, users are presented a choice to move on to the next test or exit
 4. By exiting, an text file titled output.txt is generated that creates a report with all the test results for each command
 
